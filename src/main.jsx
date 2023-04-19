@@ -10,6 +10,9 @@ import './index.css'
 import Main from './Layout/Main';
 import Homepage from './Components/Homepage/Homepage';
 import Login from './Components/LogIn/Login';
+import LoginEmail from './Components/LoginEmail/LoginEmail';
+import Register from './Register/Register';
+import RegisterRBS from './Components/RegisterRBS/RegisterRBS';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +24,19 @@ const router = createBrowserRouter([
     {
       path:'/login',
       element: <Login/>
+    }
+    ,
+    {
+      path:'/loginEmail',
+      element: <LoginEmail/>
+      
+    },{
+      path:'/register',
+      element:<Register/>
+    }
+    ,{
+      path:'/loginRbs',
+      element:<RegisterRBS/>
     }
   
   ]
