@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
-            THis is header
+        <div className=' flex flex-row justify-around'>
+            <Link to={'/'} className='px-2'>Home</Link>
+            <Link to={'/login'}>Login</Link>
         </div>
     );
 };
